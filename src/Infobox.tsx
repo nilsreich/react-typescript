@@ -3,6 +3,6 @@ interface InfoboxProps {
   parentCallback?: () => void;
 }
 
-export const Infobox = ({ text = "Suppe", parentCallback }: InfoboxProps) => {
+export const Infobox = ({ text = "Suppse", parentCallback }: InfoboxProps) => {
   return <div onClick={() => parentCallback?.()}>{text}</div>;
 };

@@ -10,10 +10,14 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="text-3xl">
       <Infobox text={text} parentCallback={() => change("Hallo")} />
       {text}
-      {text === "Hallo" ? <Adjustments width="2rem" /> : <Academic width="1rem"/>}
+      {text === "Hallo" ? (
+        <Adjustments width="2rem" />
+      ) : (
+        <Academic width="1rem" />
+      )}
     </div>
   );
 }
